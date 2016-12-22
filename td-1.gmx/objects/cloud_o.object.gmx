@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>2</depth>
+  <depth>3</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,10 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>
-alarm[0] = 60;
+alarm[0] = 75;
 
-range = 40;
-grow = .2;
+range = 50;
+grow = .4;
 damage = .3;
 
 </string>
