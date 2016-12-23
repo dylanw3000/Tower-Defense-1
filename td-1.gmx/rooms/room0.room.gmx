@@ -193,12 +193,11 @@
     <instance objName="wall_o" x="800" y="320" name="inst_D7F5FC09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="wall_o" x="800" y="352" name="inst_7075F949" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="wall_o" x="800" y="384" name="inst_1765B71A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="button_focus_o" x="64" y="384" name="inst_949B50A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="button_sell_o" x="64" y="288" name="inst_4947F3AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="button_slow_o" x="64" y="480" name="inst_031F5D9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="button_artil_o" x="64" y="576" name="inst_18A5A689" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="button_venom_o" x="64" y="672" name="inst_EDB84CA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="button_nuke_o" x="160" y="672" name="inst_8C47629C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="button_focus_o" x="64" y="384" name="inst_91764B7D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="button_dwaarp_o" x="64" y="576" name="inst_F01AD8DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

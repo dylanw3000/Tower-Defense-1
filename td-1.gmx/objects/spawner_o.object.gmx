@@ -35,15 +35,15 @@ small_size = 8;
 large_size = 2;
 
 norm_hp = 40;
-norm_ms = 2;
+norm_ms = 1;
 norm_time = 60;
 
 small_hp = 20;
-small_ms = 4;
+small_ms = 2;
 small_time = 30;
 
 large_hp = 320;
-large_ms = 1;
+large_ms = .5;
 large_time = 90;
 
 i = 0;

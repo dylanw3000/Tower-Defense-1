@@ -31,7 +31,7 @@ range = 150;
 circle = 0;
 
 shoot = 0;
-reset = 90;
+reset = 240;
 
 
 

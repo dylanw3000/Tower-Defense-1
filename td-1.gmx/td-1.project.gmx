@@ -22,6 +22,9 @@
   <paths name="paths">
     <path>paths\path0</path>
   </paths>
+  <scripts name="scripts">
+    <script>scripts\script0.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\wall_o</object>
     <object>objects\goal_o</object>
@@ -36,6 +39,8 @@
       <object>objects\explosion_o</object>
       <object>objects\venom_o</object>
       <object>objects\cloud_o</object>
+      <object>objects\dwaarp_o</object>
+      <object>objects\shockwave_o</object>
     </objects>
     <objects name="buttons">
       <object>objects\button_sell_o</object>
@@ -50,6 +55,9 @@
       <object>objects\venom_icon_o</object>
       <object>objects\button_nuke_o</object>
       <object>objects\nuke_icon_o</object>
+      <object>objects\object28</object>
+      <object>objects\button_dwaarp_o</object>
+      <object>objects\dwaarp_icon_o</object>
     </objects>
     <object>objects\nuke_o</object>
     <object>objects\nuke_explosion_o</object>

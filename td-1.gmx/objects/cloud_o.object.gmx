@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>3</depth>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,11 +26,16 @@
           <argument>
             <kind>1</kind>
             <string>
-alarm[0] = 75;
+alarm[0] = 300;
 
 range = 50;
-grow = .4;
-damage = .3;
+grow = .2;
+damage = .1;
+
+dur = 20;
+
+tick_rate = 10;
+tick = 0;
 
 </string>
           </argument>
@@ -71,14 +76,22 @@ damage = .3;
           <argument>
             <kind>1</kind>
             <string>
+draw_set_alpha(.6);
 draw_set_colour(32768);
 draw_circle(x,y,range,false);
+draw_set_alpha(1);
 
-for(i=0; i&lt;instance_number(enemy_o); i++){
-    en = instance_find(enemy_o,i);
-    if(point_distance(x,y,en.x,en.y) &lt;= range){
-        en.hp -= damage;
+tick--;
+
+if(tick &lt;= 0){
+    for(i=0; i&lt;instance_number(enemy_o); i++){
+        en = instance_find(enemy_o,i);
+        if(point_distance(x,y,en.x,en.y) &lt;= range){
+            en.hp -= damage;
+            en.slow_pool = dur;
+        }
     }
+    tick = tick_rate;
 }
 
 range += grow;

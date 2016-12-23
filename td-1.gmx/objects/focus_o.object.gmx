@@ -3,7 +3,7 @@
   <spriteName>focus_s</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-2</depth>
+  <depth>-3</depth>
   <persistent>0</persistent>
   <parentName>tower_o</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -30,8 +30,11 @@ range = 125;
 
 circle = 0;
 
-damage_base = .1;
-ramp = .02;
+tick_rate = 15;
+tick = 0;
+
+damage_base = 1;
+ramp = 2;
 
 damage = damage_base;
 
@@ -129,6 +132,8 @@ prev = 0;
 en = 0;
 pos = 0;
 
+tick--;
+
 if(instance_exists(enemy_o)){
     for(i=0; i&lt;instance_number(enemy_o); i++){
         tmp = instance_find(enemy_o,i);
@@ -151,10 +156,13 @@ if(instance_exists(enemy_o)){
         }
         
         draw_set_colour(4235519);
-        draw_line_width(x,y,en.x,en.y,damage*5);
+        draw_line_width(x,y,en.x,en.y,damage/2);
         
-        en.hp -= damage;
-        damage += ramp;
+        if(tick &lt;= 0){
+            en.hp -= damage;
+            damage += ramp;
+            tick = tick_rate;
+        }
         
         prev = en;
     }
