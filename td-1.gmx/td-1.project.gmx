@@ -17,6 +17,7 @@
     <sprite>sprites\button_s</sprite>
     <sprite>sprites\sell_s</sprite>
     <sprite>sprites\nuke_s</sprite>
+    <sprite>sprites\rail_s</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
@@ -41,6 +42,8 @@
       <object>objects\cloud_o</object>
       <object>objects\dwaarp_o</object>
       <object>objects\shockwave_o</object>
+      <object>objects\rail_o</object>
+      <object>objects\rail_laser_o</object>
     </objects>
     <objects name="buttons">
       <object>objects\button_sell_o</object>
@@ -55,9 +58,10 @@
       <object>objects\venom_icon_o</object>
       <object>objects\button_nuke_o</object>
       <object>objects\nuke_icon_o</object>
-      <object>objects\object28</object>
       <object>objects\button_dwaarp_o</object>
       <object>objects\dwaarp_icon_o</object>
+      <object>objects\button_rail_o</object>
+      <object>objects\rail_icon_o</object>
     </objects>
     <object>objects\nuke_o</object>
     <object>objects\nuke_explosion_o</object>
